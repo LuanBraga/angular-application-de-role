@@ -1,0 +1,9 @@
+<div>
+    {{ count | relativeTime }}
+</div>
+
+<input [(ngModel)]="count" type="number"/>
+
+<div>
+   {{ count }} {{ count | i18nPlural: secondMap }}
+</div>
